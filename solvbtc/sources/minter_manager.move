@@ -17,19 +17,23 @@ module solvbtc::minter_manager {
         managerId: ID,
     }
 
-    fun init(witness: MINTER_MANAGER, ctx: &mut TxContext) {}
+    fun init(witness: MINTER_MANAGER, ctx: &mut TxContext) {
+        abort 0 ;
+    }
 
     public entry fun setupTreasuryCapManager<CoinType>(
         superAdmin: address,
         treasuryCap: TreasuryCap<CoinType>,
         ctx: &mut TxContext,
     ) {
+        abort 0 ;
     }
 
     public entry fun destroyTreasuryCapManager<CoinType>(
         treasuryCapManager: TreasuryCapManager<CoinType>,
         ctx: &mut TxContext,
     ) {       
+        abort 0 ;
     }
 
     public entry fun issueMinterCap<CoinType>(
@@ -37,6 +41,7 @@ module solvbtc::minter_manager {
         treasuryCapManager: &TreasuryCapManager<CoinType>,
         ctx: &mut TxContext,
     ) { 
+        abort 0 ;
     }
 
     public entry fun revokeMinterCap<CoinType>(
@@ -44,6 +49,7 @@ module solvbtc::minter_manager {
         treasuryCapManager: &mut TreasuryCapManager<CoinType>,
         ctx: &mut TxContext,
     ) {
+        abort 0 ;
     }
 
     public entry fun mint<CoinType>(
@@ -53,6 +59,7 @@ module solvbtc::minter_manager {
         treasuryCapManager: &mut TreasuryCapManager<CoinType>,
         ctx: &mut TxContext,
     ) { 
+        abort 0 ;
     }
 
     public entry fun burn<CoinType>(
@@ -62,5 +69,6 @@ module solvbtc::minter_manager {
         treasuryCapManager: &mut TreasuryCapManager<CoinType>,
         ctx: &mut TxContext,
     ) { 
+        abort 0 ;
     }
 }
