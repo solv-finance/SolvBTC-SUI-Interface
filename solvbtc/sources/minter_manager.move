@@ -17,57 +17,57 @@ module solvbtc::minter_manager {
         managerId: ID,
     }
 
-    fun init(witness: MINTER_MANAGER, ctx: &mut TxContext) {
+    fun init(_witness: MINTER_MANAGER, _ctx: &mut TxContext) {
         abort 0 
     }
 
     public entry fun setupTreasuryCapManager<CoinType>(
-        superAdmin: address,
-        treasuryCap: TreasuryCap<CoinType>,
-        ctx: &mut TxContext,
+        _superAdmin: address,
+        _treasuryCap: TreasuryCap<CoinType>,
+        _ctx: &mut TxContext,
     ) {
         abort 0 
     }
 
     public entry fun destroyTreasuryCapManager<CoinType>(
-        treasuryCapManager: TreasuryCapManager<CoinType>,
-        ctx: &mut TxContext,
+        _treasuryCapManager: TreasuryCapManager<CoinType>,
+        _ctx: &mut TxContext,
     ) {       
         abort 0 
     }
 
     public entry fun issueMinterCap<CoinType>(
-        recipient: address,
-        treasuryCapManager: &TreasuryCapManager<CoinType>,
-        ctx: &mut TxContext,
+        _recipient: address,
+        _treasuryCapManager: &TreasuryCapManager<CoinType>,
+        _ctx: &mut TxContext,
     ) { 
         abort 0 
     }
 
     public entry fun revokeMinterCap<CoinType>(
-        minterCap: &MinterCap<CoinType>,
-        treasuryCapManager: &mut TreasuryCapManager<CoinType>,
-        ctx: &mut TxContext,
+        _minterCap: &MinterCap<CoinType>,
+        _treasuryCapManager: &mut TreasuryCapManager<CoinType>,
+        _ctx: &mut TxContext,
     ) {
         abort 0 
     }
 
     public entry fun mint<CoinType>(
-        amount: u64,
-        recipient: address,
-        minterCap: &mut MinterCap<CoinType>,
-        treasuryCapManager: &mut TreasuryCapManager<CoinType>,
-        ctx: &mut TxContext,
+        _amount: u64,
+        _recipient: address,
+        _minterCap: &mut MinterCap<CoinType>,
+        _treasuryCapManager: &mut TreasuryCapManager<CoinType>,
+        _ctx: &mut TxContext,
     ) { 
         abort 0 
     }
 
     public entry fun burn<CoinType>(
-        amount: u64,
-        coinList: vector<Coin<CoinType>>,
-        minterCap: &mut MinterCap<CoinType>,
-        treasuryCapManager: &mut TreasuryCapManager<CoinType>,
-        ctx: &mut TxContext,
+        _amount: u64,
+        _coinList: vector<Coin<CoinType>>,
+        _minterCap: &mut MinterCap<CoinType>,
+        _treasuryCapManager: &mut TreasuryCapManager<CoinType>,
+        _ctx: &mut TxContext,
     ) { 
         abort 0 
     }
