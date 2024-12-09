@@ -1,4 +1,4 @@
-module solvbtc::minter_manager {
+module solv_minter_manager::minter_manager {
 
     use sui::table;
     use sui::coin::{Coin, TreasuryCap};
